@@ -64,7 +64,6 @@ export const skillGroups: SkillGroup[] = [
   },
 ];
 
-// Skills actively being deepened — shown in the "currently learning" strip
 export const currentlyLearning = [
   "RAG Systems",
   "AI-assisted dev workflows",

@@ -14,7 +14,6 @@ export default function HeroSection() {
   const [displayed, setDisplayed] = useState("");
   const [deleting, setDeleting] = useState(false);
 
-  // Typewriter effect
   useEffect(() => {
     const current = ROLES[roleIndex];
     let timeout: NodeJS.Timeout;
@@ -39,7 +38,6 @@ export default function HeroSection() {
 
   return (
     <section className="relative flex min-h-[calc(100vh-64px)] flex-col justify-center overflow-hidden py-20">
-      {/* Subtle grid background */}
       <div
         className="pointer-events-none absolute inset-0 opacity-40"
         style={{
@@ -49,7 +47,6 @@ export default function HeroSection() {
         }}
       />
 
-      {/* Teal radial glow — right side */}
       <div
         className="pointer-events-none absolute inset-0"
         style={{
@@ -58,9 +55,7 @@ export default function HeroSection() {
         }}
       />
 
-      {/* Content */}
       <div className="relative z-10 max-w-2xl">
-        {/* Top tag */}
         <div className="mb-5 flex items-center gap-3">
           <span className="h-px w-5 bg-[#00d4aa]" />
           <span className="font-mono text-xs tracking-[0.2em] text-[#00d4aa]">
@@ -68,19 +63,16 @@ export default function HeroSection() {
           </span>
         </div>
 
-        {/* Name */}
         <h1 className="mb-2 font-mono text-5xl font-bold leading-tight text-[#ededed] md:text-6xl">
           Arif Azfar
         </h1>
 
-        {/* Typewriter role */}
         <div className="mb-1 flex h-10 items-center font-mono text-lg text-[#555]">
           <span className="mr-1 text-[#333]">//</span>
           <span>{displayed}</span>
           <span className="ml-0.5 inline-block h-5 w-0.5 animate-[blink_1s_step-end_infinite] bg-[#00d4aa]" />
         </div>
 
-        {/* Open to work status */}
         <div className="mb-8 flex items-center gap-2">
           <span className="relative flex h-2 w-2">
             <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#00d4aa] opacity-50" />
@@ -91,7 +83,6 @@ export default function HeroSection() {
           </span>
         </div>
 
-        {/* Description */}
         <p className="mb-10 font-mono text-sm leading-loose text-[#666]">
           I build <span className="text-[#00d4aa]">AI-integrated web apps</span>{" "}
           with React &amp; Next.js.
@@ -102,7 +93,6 @@ export default function HeroSection() {
           <span className="text-[#00d4aa]">RAG systems</span>.
         </p>
 
-        {/* CTAs */}
         <div className="flex flex-wrap gap-4">
           <Link
             href="/#projects"
@@ -120,7 +110,6 @@ export default function HeroSection() {
         </div>
       </div>
 
-      {/* Scroll hint */}
       <div className="absolute bottom-8 left-0 flex items-center gap-3">
         <span className="h-px w-8 bg-[#333]" />
         <span className="font-mono text-xs tracking-widest text-[#333]">

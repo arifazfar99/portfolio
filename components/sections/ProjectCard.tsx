@@ -11,26 +11,26 @@ export default function ProjectCard({ project }: { project: Project }) {
         project.featured && "border-[#00d4aa22]",
       )}
     >
-      {/* Featured badge */}
       {project.featured && (
         <span className="absolute -top-px right-4 rounded-b bg-[#00d4aa] px-2 py-0.5 font-mono text-[9px] font-bold tracking-widest text-black">
           latest
         </span>
       )}
 
-      {/* Top row: icon + links */}
       <div className="flex items-start justify-between">
         <span className="text-2xl">{project.icon}</span>
         <div className="flex items-center gap-3">
-          <Link
-            href={project.github}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-1 font-mono text-xs text-[#444] transition-colors hover:text-[#00d4aa]"
-          >
-            <GitBranchIcon size={13} />
-            github
-          </Link>
+          {project.github && (
+            <Link
+              href={project.github}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-1 font-mono text-xs text-[#444] transition-colors hover:text-[#00d4aa]"
+            >
+              <GitBranchIcon size={13} />
+              github
+            </Link>
+          )}
           {project.demo && (
             <Link
               href={project.demo}
@@ -45,7 +45,6 @@ export default function ProjectCard({ project }: { project: Project }) {
         </div>
       </div>
 
-      {/* Title + description */}
       <div>
         <h3 className="mb-2 font-mono text-sm font-bold text-[#ededed]">
           {project.title}
@@ -55,9 +54,7 @@ export default function ProjectCard({ project }: { project: Project }) {
         </p>
       </div>
 
-      {/* Tags + stack */}
       <div className="mt-auto flex flex-wrap gap-1.5 border-t border-[#1a1a1a] pt-4">
-        {/* Category tags */}
         {project.tags.map((tag) => (
           <span
             key={tag}
@@ -66,7 +63,6 @@ export default function ProjectCard({ project }: { project: Project }) {
             {tag}
           </span>
         ))}
-        {/* Stack badges */}
         {project.stack.map((tech) => (
           <span
             key={tech}

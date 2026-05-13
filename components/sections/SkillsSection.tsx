@@ -3,7 +3,6 @@ import { skillGroups, currentlyLearning } from "@/data/skills";
 export default function SkillsSection() {
   return (
     <section id="skills" className="py-24">
-      {/* Section header */}
       <div className="mb-2 flex items-center gap-3">
         <span className="h-px w-5 bg-[#00d4aa]" />
         <span className="font-mono text-xs tracking-[0.2em] text-[#00d4aa]">
@@ -24,7 +23,6 @@ export default function SkillsSection() {
             key={group.label}
             className="rounded border border-[#1f1f1f] bg-[#111] p-5 transition-colors duration-200 hover:border-[#00d4aa22]"
           >
-            {/* Card header */}
             <div className="mb-4 flex items-center gap-2 border-b border-[#1a1a1a] pb-3">
               <span className="text-sm">{group.icon}</span>
               <span className="font-mono text-xs tracking-[0.15em] text-[#00d4aa]">
@@ -32,7 +30,6 @@ export default function SkillsSection() {
               </span>
             </div>
 
-            {/* Badges */}
             <div className="flex flex-wrap gap-1.5">
               {group.skills.map((skill) => (
                 <span
@@ -65,7 +62,7 @@ export default function SkillsSection() {
               )}
             </span>
           ))}
-          {" "}— building toward senior-level backend and systems design.
+          {" "}— building toward senior-level engineer and systems design.
         </p>
       </div>
     </section>

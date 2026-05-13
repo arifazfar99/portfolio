@@ -15,7 +15,6 @@ export default function ProjectsSection() {
 
   return (
     <section id="projects" className="py-24">
-      {/* Section header */}
       <div className="mb-2 flex items-center gap-3">
         <span className="h-px w-5 bg-[#00d4aa]" />
         <span className="font-mono text-xs tracking-[0.2em] text-[#00d4aa]">
@@ -29,7 +28,6 @@ export default function ProjectsSection() {
         // personal &amp; professional work
       </p>
 
-      {/* Filters */}
       <div className="mb-8 flex flex-wrap gap-2">
         {filterTags.map((tag) => (
           <button
@@ -47,14 +45,12 @@ export default function ProjectsSection() {
         ))}
       </div>
 
-      {/* Project grid */}
       <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
         {filtered.map((project) => (
           <ProjectCard key={project.title} project={project} />
         ))}
       </div>
 
-      {/* Empty state */}
       {filtered.length === 0 && (
         <p className="font-mono text-sm text-[#444]">
           // no projects found for this filter

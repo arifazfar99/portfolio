@@ -79,7 +79,6 @@ export default function ContactSection() {
 
   return (
     <section id="contact" className="py-24">
-      {/* Section header */}
       <div className="mb-2 flex items-center gap-3">
         <span className="h-px w-5 bg-[#00d4aa]" />
         <span className="font-mono text-xs tracking-[0.2em] text-[#00d4aa]">

@@ -3,7 +3,6 @@
 import Link from "next/link";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
-import { cn } from "@/lib/utils";
 
 const navLinks = [
   { label: "about", href: "/#about" },
@@ -18,12 +17,10 @@ export default function Navbar() {
   return (
     <header className="sticky top-0 z-50 border-b border-[#1f1f1f] bg-[#0a0a0a]/90 backdrop-blur-sm">
       <nav className="mx-auto flex max-w-5xl items-center justify-between px-6 py-4">
-        {/* Logo */}
         <Link href="/" className="font-mono text-sm font-semibold text-[#00d4aa]">
           rfzfr<span className="text-foreground">.dev</span>
         </Link>
 
-        {/* Desktop links */}
         <ul className="hidden items-center gap-8 md:flex">
           {navLinks.map((link) => (
             <li key={link.href}>
@@ -37,7 +34,6 @@ export default function Navbar() {
           ))}
         </ul>
 
-        {/* CTA */}
         <Link
           href="/#contact"
           className="hidden rounded border border-[#00d4aa] px-3 py-1.5 font-mono text-xs text-[#00d4aa] transition-colors hover:bg-[#00d4aa]/10 md:block"

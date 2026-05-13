@@ -3,7 +3,7 @@ export type Project = {
   description: string;
   tags: string[];        // filter categories
   stack: string[];       // tech badges
-  github: string;
+  github?: string;
   demo?: string;         // optional — not all projects have live demos
   icon: string;
   featured?: boolean;
@@ -16,7 +16,7 @@ export const projects: Project[] = [
       "Private document Q&A agent — fully offline, zero cloud dependency. Ask questions against your own docs without sending data anywhere.",
     tags: ["ai"],
     stack: ["Python", "LangChain", "Ollama", "ChromaDB", "Llama 3.2"],
-    github: "https://github.com/arifazfar99/local-rag-agent",
+    // github: "https://github.com/arifazfar99/local-rag-agent",
     icon: "🤖",
     featured: true,
   },
@@ -27,7 +27,7 @@ export const projects: Project[] = [
     tags: ["ai", "full-stack"],
     stack: ["Next.js", "TypeScript", "OpenAI", "Supabase", "Stripe"],
     github: "https://github.com/arifazfar99/cover-letter-gpt",
-    demo: "https://your-demo-url.vercel.app",
+    // demo: "https://your-demo-url.vercel.app",
     icon: "✉️",
   },
 ];
