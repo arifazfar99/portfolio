@@ -14,7 +14,7 @@ export const projects: Project[] = [
     title: "Langkawi Wild & Waves",
     description:
       "A multi-page marketing website for a Langkawi tour operator offering nature and water-based tours.",
-    tags: ["full-stack"],
+    tags: ["website", "marketing"],
     stack: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
     demo: "https://tour-operator-landing-page.vercel.app/",
     icon: "🌊",
@@ -24,7 +24,7 @@ export const projects: Project[] = [
     title: "Langkawi Sunset Chalet",
     description:
       "A landing page marketing site for a chalet in Langkawi, strong visual storytelling, accessibility-frist design and seamless contact-driven conversions",
-    tags: ["full-stack"],
+    tags: ["landing-page", "marketing"],
     stack: ["Next.js", "TypeScript", "Tailwind CSS"],
     demo: "https://chalet-landing-page.vercel.app/",
     icon: "🏝️",
@@ -33,7 +33,7 @@ export const projects: Project[] = [
     title: "Local RAG Agent",
     description:
       "Private document Q&A agent — fully offline, zero cloud dependency. Ask questions against your own docs without sending data anywhere.",
-    tags: ["ai"],
+    tags: ["ai", "rag"],
     stack: ["Python", "LangChain", "Ollama", "ChromaDB", "Llama 3.2"],
     // github: "https://github.com/arifazfar99/local-rag-agent",
     icon: "🤖",
