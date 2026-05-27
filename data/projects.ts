@@ -11,6 +11,16 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    title: "Langkawi Wild & Waves",
+    description:
+      "A multi-page marketing website for a Langkawi tour operator offering nature and water-based tours.",
+    tags: ["full-stack"],
+    stack: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
+    demo: "https://tour-operator-landing-page.vercel.app/",
+    icon: "🌊",
+    featured: true,
+  },
+  {
     title: "Langkawi Sunset Chalet",
     description:
       "A landing page marketing site for a chalet in Langkawi, strong visual storytelling, accessibility-frist design and seamless contact-driven conversions",
@@ -18,7 +28,6 @@ export const projects: Project[] = [
     stack: ["Next.js", "TypeScript", "Tailwind CSS"],
     demo: "https://chalet-landing-page.vercel.app/",
     icon: "🏝️",
-    featured: true,
   },
   {
     title: "Local RAG Agent",
