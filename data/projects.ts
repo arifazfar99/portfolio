@@ -15,7 +15,7 @@ export const projects: Project[] = [
     description:
       "A landing page marketing site for a chalet in Langkawi, strong visual storytelling, accessibility-frist design and seamless contact-driven conversions",
     tags: ["full-stack"],
-    stack: ["Next.js, TypeScript, Tailwind CSS"],
+    stack: ["Next.js", "TypeScript", "Tailwind CSS"],
     demo: "https://chalet-landing-page.vercel.app/",
     icon: "🏝️",
     featured: true,
