@@ -13,9 +13,9 @@ export const projects: Project[] = [
   {
     title: "Langkawi Sunset Chalet",
     description:
-      "A landing page marketing site for a chalet in Langkawi, featuring dynamic content powered by Sanity, strong visual storytelling, accessibility-frist design and seamless contact-driven conversions",
+      "A landing page marketing site for a chalet in Langkawi, strong visual storytelling, accessibility-frist design and seamless contact-driven conversions",
     tags: ["full-stack"],
-    stack: ["Next.js, TypeScript, Tailwind CSS, Sanity CMS"],
+    stack: ["Next.js, TypeScript, Tailwind CSS"],
     demo: "https://chalet-landing-page.vercel.app/",
     icon: "🏝️",
     featured: true,
