@@ -11,6 +11,16 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    title: "Langkawi Sunset Chalet",
+    description:
+      "A landing page marketing site for a chalet in Langkawi, featuring dynamic content powered by Sanity, strong visual storytelling, accessibility-frist design and seamless contact-driven conversions",
+    tags: ["full-stack"],
+    stack: ["Next.js, TypeScript, Tailwind CSS, Sanity CMS"],
+    demo: "https://chalet-landing-page.vercel.app/",
+    icon: "🏝️",
+    featured: true,
+  },
+  {
     title: "Local RAG Agent",
     description:
       "Private document Q&A agent — fully offline, zero cloud dependency. Ask questions against your own docs without sending data anywhere.",
@@ -18,7 +28,6 @@ export const projects: Project[] = [
     stack: ["Python", "LangChain", "Ollama", "ChromaDB", "Llama 3.2"],
     // github: "https://github.com/arifazfar99/local-rag-agent",
     icon: "🤖",
-    featured: true,
   },
   {
     title: "Cover Letter GPT",
