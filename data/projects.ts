@@ -11,15 +11,25 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    title: "Homestay Booking Portal (WIP)",
+    title: "QuoteDoc",
     description:
-      "Multi-Unit Booking Portal with Self-Check-in & House Rules",
-    tags: ["Freelance"],
-    stack: ["Next.js", "TypeScript", "Tailwind CSS", "Zustand", "React Query", "Supabase", "Billplz", "Resend", "CallMeBot", "Cloudinary", "Vercel"],
-    // demo: "https://tour-operator-landing-page.vercel.app/",
-    icon: "🏡",
+      "A web app that generates three (3) types of business documents (quotation, delivery order, invoice) in Bahasa Melayu. User can download the document as a PDF file.",
+    tags: ["freelance"],
+    stack: ["Next.js", "TypeScript", "Tailwind CSS", "React PDF", "Vercel"],
+    demo: "https://quotedoc-app.vercel.app/",
+    icon: "📄",
     featured: true,
   },
+  // {
+  //   title: "Homestay Booking Portal (WIP)",
+  //   description:
+  //     "Multi-Unit Booking Portal with Self-Check-in & House Rules",
+  //   tags: ["Freelance"],
+  //   stack: ["Next.js", "TypeScript", "Tailwind CSS", "Zustand", "React Query", "Supabase", "Billplz", "Resend", "CallMeBot", "Cloudinary", "Vercel"],
+  //   // demo: "https://tour-operator-landing-page.vercel.app/",
+  //   icon: "🏡",
+  //   featured: true,
+  // },
   // {
   //   title: "Langkawi Wild & Waves",
   //   description:
