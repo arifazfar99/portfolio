@@ -16,7 +16,7 @@ export const projects: Project[] = [
       "A web app that generates three (3) types of business documents (quotation, delivery order, invoice) in Bahasa Melayu. User can download the document as a PDF file.",
     tags: ["freelance"],
     stack: ["Next.js", "TypeScript", "Tailwind CSS", "React PDF", "Vercel"],
-    demo: "https://quotedoc-app.vercel.app/",
+    demo: "https://quotedoc.vercel.app/",
     icon: "📄",
     featured: true,
   },
