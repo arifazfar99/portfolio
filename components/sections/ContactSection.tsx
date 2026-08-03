@@ -16,12 +16,12 @@ type Status = "idle" | "loading" | "success" | "error";
 const contactLinks = [
   {
     icon: Mail,
-    label: "arifazfar99@gmail.com",           
+    label: "arifazfar99@gmail.com",
     href: "mailto:arifazfar99@gmail.com",
   },
   {
     icon: GitBranchIcon,
-    label: "github.com/arifazfar99", 
+    label: "github.com/arifazfar99",
     href: "https://github.com/arifazfar99",
   },
   {
@@ -31,7 +31,7 @@ const contactLinks = [
   },
   {
     icon: MapPin,
-    label: "Kedah, Malaysia",
+    label: "Kuala Lumpur, Malaysia",
     href: "#",
   },
 ];
@@ -80,29 +80,29 @@ export default function ContactSection() {
   return (
     <section id="contact" className="py-24">
       <div className="mb-2 flex items-center gap-3">
-        <span className="h-px w-5 bg-[#00d4aa]" />
-        <span className="font-mono text-xs tracking-[0.2em] text-[#00d4aa]">
+        <span className="h-px w-5 bg-accent" />
+        <span className="font-mono text-xs tracking-[0.2em] text-accent">
           contact
         </span>
       </div>
-      <h2 className="mb-1 font-mono text-3xl font-bold text-[#ededed]">
+      <h2 className="mb-1 font-display text-3xl italic text-text">
         Get In Touch
       </h2>
-      <p className="mb-12 font-mono text-xs text-[#555]">
-        // open to full-stack roles &amp; collaborations
+      <p className="mb-12 font-mono text-xs text-text-muted">
+        {"// sign-off & open lines"}
       </p>
 
       <div className="grid grid-cols-1 gap-12 md:grid-cols-[1fr_1.6fr]">
         {/* Left — info */}
         <div>
-          <p className="mb-8 font-mono text-xs leading-loose text-[#555]">
-            I'm currently{" "}
-            <span className="text-[#00d4aa]">open to full-stack roles</span> —
-            remote-friendly or hybrid in Malaysia.
+          <p className="mb-8 font-sans text-[13px] leading-loose text-text-muted">
+            I&apos;m currently{" "}
+            <span className="text-accent">open to Frontend Developer roles</span>{" "}
+            — remote-friendly or hybrid in Kuala Lumpur.
             <br />
             <br />
             Got a project, opportunity, or just want to say hi? Drop a message
-            and I'll get back to you.
+            and I&apos;ll get back to you.
           </p>
 
           <ul className="flex flex-col gap-3">
@@ -112,9 +112,9 @@ export default function ContactSection() {
                   href={link.href}
                   target={link.href.startsWith("http") ? "_blank" : undefined}
                   rel="noopener noreferrer"
-                  className="group flex items-center gap-3 font-mono text-xs text-[#444] transition-colors hover:text-[#00d4aa]"
+                  className="group flex items-center gap-3 font-mono text-xs text-text-muted transition-colors hover:text-accent"
                 >
-                  <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded border border-[#1f1f1f] bg-[#111] transition-colors group-hover:border-[#00d4aa33]">
+                  <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded border border-border bg-surface transition-colors group-hover:border-accent">
                     <link.icon size={13} />
                   </span>
                   {link.label}
@@ -157,7 +157,7 @@ export default function ContactSection() {
 
           {/* Message textarea */}
           <div className="flex flex-col gap-1.5">
-            <label className="font-mono text-[10px] tracking-[0.15em] text-[#444]">
+            <label className="font-mono text-[10px] tracking-[0.15em] text-text-muted">
               MESSAGE
             </label>
             <textarea
@@ -167,7 +167,7 @@ export default function ContactSection() {
               value={form.message}
               onChange={handleChange}
               required
-              className="resize-none rounded border border-[#1f1f1f] bg-[#111] px-3.5 py-2.5 font-mono text-xs text-[#ededed] placeholder-[#333] outline-none transition-colors focus:border-[#00d4aa44]"
+              className="resize-none rounded border border-border bg-surface px-3.5 py-2.5 font-mono text-xs text-text placeholder-text-muted/50 outline-none transition-colors focus:border-accent"
             />
           </div>
 
@@ -178,8 +178,8 @@ export default function ContactSection() {
 
           {/* Success message */}
           {status === "success" && (
-            <p className="font-mono text-xs text-[#00d4aa]">
-              ✓ Message sent — I'll get back to you soon.
+            <p className="font-mono text-xs text-accent">
+              ✓ Message sent — I&apos;ll get back to you soon.
             </p>
           )}
 
@@ -188,12 +188,12 @@ export default function ContactSection() {
             type="submit"
             disabled={status === "loading"}
             className={cn(
-              "flex items-center gap-2 self-start rounded bg-[#00d4aa] px-5 py-2.5 font-mono text-xs font-bold tracking-wider text-black transition-opacity",
+              "flex items-center gap-2 self-start rounded bg-accent px-5 py-2.5 font-mono text-xs font-bold tracking-wider text-accent-contrast transition-opacity",
               status === "loading" ? "cursor-not-allowed opacity-60" : "hover:opacity-90"
             )}
           >
             <Send size={13} />
-            {status === "loading" ? "sending..." : "send message →"}
+            {status === "loading" ? "sending..." : "seal & send →"}
           </button>
         </form>
       </div>
@@ -219,7 +219,7 @@ function Field({
 }) {
   return (
     <div className="flex flex-col gap-1.5">
-      <label className="font-mono text-[10px] tracking-[0.15em] text-[#444]">
+      <label className="font-mono text-[10px] tracking-[0.15em] text-text-muted">
         {label}
       </label>
       <input
@@ -229,7 +229,7 @@ function Field({
         value={value}
         onChange={onChange}
         required
-        className="rounded border border-[#1f1f1f] bg-[#111] px-3.5 py-2.5 font-mono text-xs text-[#ededed] placeholder-[#333] outline-none transition-colors focus:border-[#00d4aa44]"
+        className="rounded border border-border bg-surface px-3.5 py-2.5 font-mono text-xs text-text placeholder-text-muted/50 outline-none transition-colors focus:border-accent"
       />
     </div>
   );

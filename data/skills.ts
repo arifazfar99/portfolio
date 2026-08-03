@@ -20,6 +20,8 @@ export const skillGroups: SkillGroup[] = [
       "Material UI",
       "Bootstrap",
       "Ant Design",
+      "Context API",
+      "Redux Toolkit",
     ],
   },
   {
@@ -33,6 +35,7 @@ export const skillGroups: SkillGroup[] = [
       "PostgreSQL",
       "MongoDB",
       "Supabase",
+      "Prisma",
     ],
   },
   {
@@ -54,6 +57,7 @@ export const skillGroups: SkillGroup[] = [
     skills: [
       "Git",
       "GitHub",
+      "GitHub Actions",
       "Vite",
       "Postman",
       "Playwright",

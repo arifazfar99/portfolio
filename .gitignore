@@ -36,6 +36,9 @@ yarn-error.log*
 # vercel
 .vercel
 
+# AI planning workspace (local only, not part of the app)
+/Project Resources/
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts

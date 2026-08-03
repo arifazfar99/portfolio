@@ -16,16 +16,16 @@ export default function ProjectsSection() {
   return (
     <section id="projects" className="py-24">
       <div className="mb-2 flex items-center gap-3">
-        <span className="h-px w-5 bg-[#00d4aa]" />
-        <span className="font-mono text-xs tracking-[0.2em] text-[#00d4aa]">
+        <span className="h-px w-5 bg-accent" />
+        <span className="font-mono text-xs tracking-[0.2em] text-accent">
           projects
         </span>
       </div>
-      <h2 className="mb-1 font-mono text-3xl font-bold text-[#ededed]">
-        Things I've Built
+      <h2 className="mb-1 font-display text-3xl italic text-text">
+        Things I&apos;ve Shipped
       </h2>
-      <p className="mb-8 font-mono text-xs text-[#555]">
-        // personal &amp; professional work
+      <p className="mb-8 font-mono text-xs text-text-muted">
+        {"// a record of personal & professional work"}
       </p>
 
       <div className="mb-8 flex flex-wrap gap-2">
@@ -36,8 +36,8 @@ export default function ProjectsSection() {
             className={cn(
               "rounded border px-4 py-1.5 font-mono text-xs tracking-wider transition-all",
               active === tag
-                ? "border-[#00d4aa] bg-[#00d4aa0d] text-[#00d4aa]"
-                : "border-[#1f1f1f] text-[#555] hover:border-[#333] hover:text-[#888]",
+                ? "border-accent bg-accent-soft text-accent"
+                : "border-border text-text-muted hover:border-accent",
             )}
           >
             {tag}
@@ -45,15 +45,15 @@ export default function ProjectsSection() {
         ))}
       </div>
 
-      <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
-        {filtered.map((project) => (
-          <ProjectCard key={project.title} project={project} />
+      <div className="flex flex-col gap-4">
+        {filtered.map((project, i) => (
+          <ProjectCard key={project.title} project={project} entryNo={i + 1} />
         ))}
       </div>
 
       {filtered.length === 0 && (
-        <p className="font-mono text-sm text-[#444]">
-          // no projects found for this filter
+        <p className="font-mono text-sm text-text-muted">
+          {"// no projects found for this filter"}
         </p>
       )}
     </section>

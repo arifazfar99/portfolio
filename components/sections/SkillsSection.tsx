@@ -4,16 +4,16 @@ export default function SkillsSection() {
   return (
     <section id="skills" className="py-24">
       <div className="mb-2 flex items-center gap-3">
-        <span className="h-px w-5 bg-[#00d4aa]" />
-        <span className="font-mono text-xs tracking-[0.2em] text-[#00d4aa]">
+        <span className="h-px w-5 bg-accent" />
+        <span className="font-mono text-xs tracking-[0.2em] text-accent">
           skills
         </span>
       </div>
-      <h2 className="mb-1 font-mono text-3xl font-bold text-[#ededed]">
+      <h2 className="mb-1 font-display text-3xl italic text-text">
         What I Work With
       </h2>
-      <p className="mb-12 font-mono text-xs text-[#555]">
-        // tools &amp; technologies
+      <p className="mb-12 font-mono text-xs text-text-muted">
+        {"// specification sheet"}
       </p>
 
       {/* Skills grid */}
@@ -21,11 +21,11 @@ export default function SkillsSection() {
         {skillGroups.map((group) => (
           <div
             key={group.label}
-            className="rounded border border-[#1f1f1f] bg-[#111] p-5 transition-colors duration-200 hover:border-[#00d4aa22]"
+            className="rounded border border-border bg-surface p-5 transition-colors duration-200 hover:border-accent/40"
           >
-            <div className="mb-4 flex items-center gap-2 border-b border-[#1a1a1a] pb-3">
+            <div className="mb-4 flex items-center gap-2 border-b border-border pb-3">
               <span className="text-sm">{group.icon}</span>
-              <span className="font-mono text-xs tracking-[0.15em] text-[#00d4aa]">
+              <span className="font-mono text-xs tracking-[0.15em] text-accent">
                 {group.label}
               </span>
             </div>
@@ -34,7 +34,7 @@ export default function SkillsSection() {
               {group.skills.map((skill) => (
                 <span
                   key={skill}
-                  className="rounded border border-[#2a2a2a] bg-[#161616] px-2.5 py-1 font-mono text-[10px] tracking-wider text-[#ededed]"
+                  className="rounded border border-border bg-bg-dim px-2.5 py-1 font-mono text-[10px] tracking-wider text-text"
                 >
                   {skill}
                 </span>
@@ -45,24 +45,24 @@ export default function SkillsSection() {
       </div>
 
       {/* Currently learning strip */}
-      <div className="mt-6 flex items-start gap-3 rounded border border-[#00d4aa22] bg-[#00d4aa05] p-4">
+      <div className="mt-6 flex items-start gap-3 rounded border border-accent/30 bg-accent-soft p-4">
         {/* Pulsing dot */}
         <span className="relative mt-1 flex h-2 w-2 shrink-0">
-          <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#00d4aa] opacity-50" />
-          <span className="relative inline-flex h-2 w-2 rounded-full bg-[#00d4aa]" />
+          <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-accent opacity-50" />
+          <span className="relative inline-flex h-2 w-2 rounded-full bg-accent" />
         </span>
 
-        <p className="font-mono text-xs leading-relaxed text-[#555]">
+        <p className="font-sans text-xs leading-relaxed text-text-muted">
           Currently deepening:{" "}
           {currentlyLearning.map((item, i) => (
             <span key={item}>
-              <span className="text-[#00d4aa]">{item}</span>
+              <span className="text-accent">{item}</span>
               {i < currentlyLearning.length - 1 && (
-                <span className="text-[#333]">, </span>
+                <span className="text-accent-strong">, </span>
               )}
             </span>
-          ))}
-          {" "}— building toward senior-level engineer and systems design.
+          ))}{" "}
+          — building toward senior-level engineer and systems design.
         </p>
       </div>
     </section>

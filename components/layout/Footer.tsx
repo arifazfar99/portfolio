@@ -9,10 +9,10 @@ const socials = [
 
 export default function Footer() {
   return (
-    <footer className="border-t border-[#1f1f1f] px-6 py-6">
-      <div className="mx-auto flex max-w-5xl items-center justify-between">
-        <p className="font-mono text-xs text-[#444]">
-          © {new Date().getFullYear()} Arif Azfar. Built with Next.js.
+    <footer className="border-t border-border px-6 py-6">
+      <div className="mx-auto flex max-w-5xl flex-wrap items-center justify-between gap-4">
+        <p className="font-mono text-[10px] tracking-wide text-text-muted">
+          © {new Date().getFullYear()} Arif Azfar — filed with Next.js
         </p>
         <ul className="flex items-center gap-6">
           {socials.map((s) => (
@@ -21,9 +21,9 @@ export default function Footer() {
                 href={s.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-1.5 font-mono text-xs text-[#555] transition-colors hover:text-[#00d4aa]"
+                className="flex items-center gap-1.5 font-mono text-[10px] tracking-wide text-text-muted transition-colors hover:text-accent"
               >
-                <s.icon size={14} />
+                <s.icon size={13} />
                 {s.label}
               </Link>
             </li>
