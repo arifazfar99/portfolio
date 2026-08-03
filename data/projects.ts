@@ -17,7 +17,7 @@ export const projects: Project[] = [
       "Quotation, delivery order, and invoice generator built and customized for a local business, replacing a manual Excel-based quoting process — documents chain together (quote → delivery order → invoice) with an on-screen preview and branded PDF export. Deployed to production.",
     tags: ["Personal Project"],
     stack: ["Next.js", "TypeScript", "Prisma", "PostgreSQL"],
-    demo: "https://quotedoc.vercel.app/",
+    // demo: "https://quotedoc.vercel.app/",
     icon: "📄",
     filed: "Jun 2026 · rebuilt Aug 2026",
     featured: true,
