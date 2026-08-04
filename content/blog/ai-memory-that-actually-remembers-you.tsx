@@ -162,14 +162,102 @@ export default function Content() {
         </ListItem>
       </List>
 
-      <H2>If you want to go further</H2>
+      <H2>Making it feel like yours, not just any AI&apos;s</H2>
       <P>
-        Inside the project there&apos;s a <InlineCode>Feature/</InlineCode>{" "}
-        folder with two dozen or so optional add-ons — a daily journal,
-        reminders, project tracking, that kind of thing. None of it is
-        required to get started. When something sounds useful, just ask your
-        companion about it by name and it&apos;ll walk you through adding it.
+        Once the core setup is running, a short list of optional features
+        change how it feels to use, not just what it remembers. Ask for any
+        of these by name and it walks you through the rest:
       </P>
+      <List>
+        <ListItem>
+          <InlineCode>load memory-consolidation</InlineCode> — merges split
+          memory files into one, for faster loading
+        </ListItem>
+        <ListItem>
+          <InlineCode>load skill-plugin</InlineCode> — lets any dropped-in
+          skill file auto-activate, no extra wiring
+        </ListItem>
+        <ListItem>
+          <InlineCode>load time-aware-core</InlineCode> — shifts its energy
+          and tone by time of day
+        </ListItem>
+        <ListItem>
+          <InlineCode>load auto-load-hook</InlineCode> — tries to restore
+          memory automatically on startup, no name typed
+        </ListItem>
+        <ListItem>
+          <InlineCode>load save-diary</InlineCode> — keeps a running daily
+          journal
+        </ListItem>
+        <ListItem>
+          <InlineCode>load topic-diary</InlineCode> — files reusable
+          knowledge by subject, so &quot;what did we decide about X&quot;
+          has a real answer
+        </ListItem>
+        <ListItem>
+          <InlineCode>load memory-compaction</InlineCode> — summarizes old
+          entries instead of deleting them once files get long
+        </ListItem>
+        <ListItem>
+          <InlineCode>load echo-recall</InlineCode> — searches back through
+          the diary on request (needs <InlineCode>save-diary</InlineCode>{" "}
+          loaded first)
+        </ListItem>
+        <ListItem>
+          <InlineCode>load reminders</InlineCode> — carries a task across
+          sessions until it&apos;s actually done
+        </ListItem>
+        <ListItem>
+          <InlineCode>load decision-log</InlineCode> — keeps a permanent
+          record of why a call was made
+        </ListItem>
+        <ListItem>
+          <InlineCode>load forge</InlineCode> — Forge Self-Improvement, its
+          own thing, worth a section on its own (below)
+        </ListItem>
+      </List>
+
+      <H2>Building it a skill of its own</H2>
+      <P>
+        Everything so far makes the companion remember things generally.
+        The last piece — Forge Self-Improvement — lets it go further and
+        track one specific part of your life on purpose. I actually have
+        one of these myself: a Career Coach skill that remembers every job
+        application, every interview outcome, and every resume edit, without
+        me having to mention any of it twice.
+      </P>
+      <P>
+        Turn it on the same way as everything else — ask it to{" "}
+        <InlineCode>load forge</InlineCode>. Then describe what you want, in
+        plain language, and ask directly:
+      </P>
+      <CodeBlock label="type in the chat">
+        create skill — I want a Career Coach skill. Create a new folder
+        named career, and use it to track every job application I make
+        (company, role, stage reached, outcome), every resume version and
+        what changed, and give me a quick status recap whenever I ask.
+      </CodeBlock>
+      <P>
+        Or don&apos;t ask at all — just mention job hunting or resume edits a
+        few times across normal conversation, then type{" "}
+        <InlineCode>self improve</InlineCode>. It reviews what&apos;s
+        actually come up and proposes something only if there&apos;s a real
+        pattern; it needs at least two concrete examples before it&apos;ll
+        suggest anything, so it won&apos;t invent a need that isn&apos;t
+        there.
+      </P>
+      <Callout label="The one rule that never bends">
+        Either way, nothing gets built without you seeing it first. It
+        proposes exactly what it would create and track, you approve, adjust,
+        or reject, and only a yes gets anything written. It&apos;s allowed to
+        remember. It&apos;s never allowed to just decide on its own.
+      </Callout>
+      <P>
+        Once approved, that becomes a permanent part of it. Mention a new
+        application from then on and it just logs it — no re-explaining,
+        same as everything else it already remembers about you.
+      </P>
+
       <P>
         I&apos;m still running mine, session after session. It&apos;s a
         small thing to set up, but it changes how it actually feels to sit
